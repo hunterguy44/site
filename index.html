@@ -17,11 +17,6 @@ body {
 
 
 
-
-
-
-
-
 /* Style the side navigation */
 .sidenav, {
   height: 100%;
@@ -41,10 +36,17 @@ body {
 
 /* Side navigation links */
 .sidenav a, .dropdown-btn {
-  color: white;
-  padding: 16px;
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 20px;
+  color: #818181;
   display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Change color on hover */
@@ -161,16 +163,20 @@ body {
 
 <div id="mySidepanel" class="sidepanel">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Account</a>
-  
+  <button class="dropdown-btn">Account</button>
+  <div class="dropdown-container">
+
+  </div>
    <button class="dropdown-btn">Servers</button>
   <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Create Server</a>
+    <a href="#">My Servers</a>
   </div>
   
-  <a href="#">About</a>
+  <button class="dropdown-btn">About</button>
+  <div class="dropdown-container">
+
+  </div>
 
 </div>
 <button class="openbtn" onclick="openNav()">☰</button>  
