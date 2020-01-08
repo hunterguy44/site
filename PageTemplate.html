@@ -151,58 +151,8 @@ body {
 }
   
   
-  .slidecontainer {
-align="center"
-
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 50%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  align="center"
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
   
-  p.ex2 {
-
-  margin: 35px;
-}
   
-  .div {
-
-
-
-
-  }
-   }
 </style>
 </head>
 <body>
@@ -234,45 +184,6 @@ align="center"
 
 </div>
 <button class="openbtn" onclick="openNav()">☰</button>  
-
-
-<h1 class="div" align="center">RAM: <span id="demo"></span></h1>
-<div class="slidecontainer" align="center">
-  <input type="range" min="1" max="16" value="4" class="slider" id="myRange">
-</div>
-
-
-
-<h1 class="div" align="center"> CPU CORES: <span id="demo1"></span></h1>
-<div class="slidecontainer" align="center">
-  <input type="range" min="1" max="8" value="2" class="slider" id="myRange1">
-</div>
-
-
-
-<script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-</script>
-
-<script>
-var slider1 = document.getElementById("myRange1");
-var output1 = document.getElementById("demo1");
-output1.innerHTML = slider.value;
-
-slider1.oninput = function() {
-  output1.innerHTML = this.value;
-}
-</script>
-
-
-
-
 
 <script>
 function openNav() {
