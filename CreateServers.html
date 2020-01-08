@@ -185,17 +185,11 @@ body {
 </div>
 <button class="openbtn" onclick="openNav()">☰</button>  
 
-<form action="https://adamsthermal.com" method="GET">
-  <fieldset>
-    <legend>Personal information:</legend>
-    First name:<br>
-    <input type="text" name="firstname" value="Mickey"><br>
-    Last name:<br>
-    <input type="text" name="lastname" value="Mouse"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
+<form method="POST">
+    <label for="firstName">Your first name</label>
+    <input type="text" id="firstName" placeholder="Your name goes here" />
+    <input type="submit" />
 </form>
-
 
 <script>
 function openNav() {
